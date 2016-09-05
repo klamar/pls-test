@@ -4,6 +4,10 @@
 ```
 curl -sSL https://get.docker.com/ | sh
 ```
+* Add your user to docker group (requires logging out and in again)
+```
+sudo usermod -aG docker $USER
+```
 * Install docker-compose
 ```
     curl -L https://github.com/docker/compose/releases/download/1.8.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
@@ -18,19 +22,25 @@ curl -sSL https://get.docker.com/ | sh
 
 # How to use Docker container
 
-## Start container
-
-open a terminal
-run: 
-
+* Start container
+```
     docker-compose up
+```
 
-
-## Stop container
-run: 
-
+* Stop container
+```
     docker-compose stop
+```
 
+* Install a library using composer
+```
+    docker-compose exec www bash -c "cd /var/www/html && composer require laravel/laravel" 
+```
+
+* Enter container
+```
+    docker-compose exec www bash
+```
 
 # URLs
 
