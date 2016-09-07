@@ -80,6 +80,17 @@ phpPgAdmin: http://localhost:8088/phppgadmin
 
 # Finishing the test
 
+Do not forget to add a SQL file or a dump for creating the database structure. 
+Simply add the sql/dump files somewhere to the project archive.
+Some frameworks support migrations. You could also create a migration. 
+Please provide instructions (framework specific) on how to get your database structure to run on a different computer.
+
+* [Phpmyadmin: How do I backup/create dump of my MySQL database?](https://support.fluidhosting.com/index.php?_m=knowledgebase&_a=viewarticle&kbarticleid=89)
+* [Phppgadmin: How do I backup/create dump of my PostgreSQL database?](https://support.fluidhosting.com/index.php?_m=knowledgebase&_a=viewarticle&kbarticleid=152)
+
+
+Archiving your project directory
+
     tar czf pls-test.tar.gz --exclude=data <project-root>
     
 or
