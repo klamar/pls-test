@@ -5,6 +5,8 @@ with the environment before the test starts.
 
 * Maybe you want to try to install stuff using composer? (you are allowed to install any library you want) 
 * Have you checked phpmyadmin or phppgadmin?
+* Did you check if .htaccess files are working properly (the test does not require .htaccess file knowledge, but
+  the libraries you may want to use might require it)
 
 General information about Docker and docker-compose if you are not so familiar with these tools:
 
